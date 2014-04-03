@@ -1,0 +1,115 @@
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: $background;
+  font-family: $copy;
+  color: $text;
+  line-height: 1.4em;
+}
+
+*::selection {
+  background-color: #FFCC00;
+}
+
+.container {
+  *zoom: 1;
+  width: 40em;
+  max-width: 93.75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container:before, .container:after {
+  content: " ";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
+a, a:visited {
+  color: lighten($text, 25%);
+}
+
+hr {
+  height: 0;
+  border: 0;
+  border-top: 1px solid lighten($text, 50%);
+
+}
+
+.menu-link {
+  position: absolute;
+  display: block;
+  line-height: 1.5em;
+  font-size: 2em;
+  color: $background;
+  text-decoration: none;
+  &:visited {
+    color: $background;
+  }
+}
+
+.page-title {
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+  margin: 1em;
+  padding: 0;
+}
+
+.mm-list {
+  font-size: 1.5em;
+}
+
+header {
+  background-color: #FF3B30;
+  color: $background;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: .25em solid darken(#FF3B30, 25%);
+}
+
+article {
+  margin-top: 3.375em;
+  padding: 1em 0;
+}
+
+.law {
+  font-family: $law;
+  font-size: .875em;
+}
+
+.comment {
+  padding-left: 1em;
+  border-left: .5em solid lighten($text, 50%);
+}
+
+footer {
+  background-color: #1F1F21;
+  font-size: .875em;
+  color: $background;
+  padding: 1em 0;
+  h4 {
+    font-size: 1.25em;
+    text-transform: uppercase;
+  }
+  a, a:visited {
+    color: $background;
+  }
+}
